@@ -1,10 +1,8 @@
-<%= form_with model: モデル名, local: true do |f|%>
-<%# 部分テンプレートを呼び出し、インスタンスを渡して、エラー発生時にメッセージが表示されるようにしています %>
+<%= form_with model: prototype, local: true do |f|%>
   <%= render 'error_messages', model: f.object %>
-<%# // 部分テンプレートを呼び出し、インスタンスを渡して、エラー発生時にメッセージが表示されるようにしています %>
   <div class="field">
-    <%= f.label :hoge, "プロトタイプの名称" %><br />
-    <%= f.text_field :hoge, id:"prototype_title" %>
+    <%= f.label :price, "価格" %><br />
+    <%= f.number_field :price, id:"prototype_price" %>
   </div>
 
   <div class="field">
