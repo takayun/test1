@@ -13,6 +13,7 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.string  :transmission,  null: false
       t.string  :inspection,    null: false
       t.text    :comment
+      t.references :user, null: false, foreign_key: true
       t.timestamps
     end
   end
