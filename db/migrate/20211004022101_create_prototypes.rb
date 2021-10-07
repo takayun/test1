@@ -7,7 +7,7 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.string  :car_grade,     null: false
       t.string  :body_color,    null: false
       t.string  :vi_number,     null: false
-      t.integer :year,          null: false
+      t.string  :year,          null: false
       t.integer :mileage,       null: false
       t.string  :drive_system,  null: false
       t.string  :transmission,  null: false

@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_10_04_063553) do
     t.string "car_grade", null: false
     t.string "body_color", null: false
     t.string "vi_number", null: false
-    t.integer "year", null: false
+    t.string "year", null: false
     t.integer "mileage", null: false
     t.string "drive_system", null: false
     t.string "transmission", null: false
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2021_10_04_063553) do
     t.string "shop_name", null: false
     t.string "person_name", null: false
     t.string "address", null: false
-    t.integer "phone_number", null: false
+    t.string "phone_number", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

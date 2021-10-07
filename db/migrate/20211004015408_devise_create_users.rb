@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string  :shop_name,          null: false
       t.string  :person_name,        null: false
       t.string  :address,            null: false
-      t.integer :phone_number,       null: false
+      t.string  :phone_number,       null: false
 
       ## Recoverable
       t.string   :reset_password_token
