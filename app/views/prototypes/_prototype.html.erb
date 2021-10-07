@@ -1,9 +1,9 @@
 <div class="card">
-  <%= link_to image_tag(prototype.image, class: :card__img ), root_path%>
+  <%= link_to image_tag(prototype.image, class: :card__img ), prototype_path(prototype) %>
   <div class="card__body">
-    <%= link_to prototype.car_maker, root_path, class: :card__title%>
+    <%= link_to prototype.car_maker, prototype_path(prototype), class: :card__title%>
     <p class="card__summary">
-      <%= prototype.car_model %>
+      <%= link_to prototype.car_model, prototype_path(prototype) %>
     </p>
     <%= link_to "by " + prototype.user.shop_name, user_path(prototype.user.id), class: :card__user %>
   </div>
