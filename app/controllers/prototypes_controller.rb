@@ -2,7 +2,7 @@ class PrototypesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @prototypes = Prototype.all
+    @prototypes = Prototype.includes(:user).order("updated_at DESC")
   end
 
   def new

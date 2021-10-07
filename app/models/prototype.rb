@@ -16,4 +16,8 @@ class Prototype < ApplicationRecord
     validates :inspection
     validates :image
   end
+
+  def self.search(user_id)
+    Prototype.where(user_id: user_id).includes(:user)
+  end
 end
