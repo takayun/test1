@@ -12,14 +12,15 @@ document.addEventListener('DOMContentLoaded', function(){
         imageContent.remove();
       }
 
-      const file = e.target.files[0];     //画像情報を取得して変数fileに格納
+      const file = e.target.files[0];                    //画像情報を取得して変数fileに格納
       const blob = window.URL.createObjectURL(file);     //取得した画像情報のURLを生成
 
       const imageElement = document.createElement('div');     // 画像を表示するためのdiv要素を生成
-      const blobImage = document.createElement('img');     // 表示する画像を生成
-      blobImage.setAttribute('src', blob);     //img要素にsrc属性として画像情報(blob)を指定
+      const blobImage = document.createElement('img');        // 表示する画像を生成
+      blobImage.setAttribute('src', blob);                    //img要素にsrc属性として画像情報(blob)を指定
+      blobImage.setAttribute('id', 'image_content')           //img要素にidを指定(画像を２回以上変更しても以前の画像が削除されるようにするため)
 
-      imageElement.appendChild(blobImage);     //imd要素をdiv要素の子要素として追加
+      imageElement.appendChild(blobImage);        //imd要素をdiv要素の子要素として追加
       ImageSection.appendChild(imageElement);     //div要素をさらにdiv要素の子要素として追加
     });
   }
