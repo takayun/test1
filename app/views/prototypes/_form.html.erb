@@ -2,7 +2,7 @@
   <%= render 'layouts/error_messages', model: f.object %>
   <div class="field">
     <%= f.label :price, "価格" %><br />
-    <%= f.number_field :price, id:"prototype_price" %>
+    <span><%= f.number_field :price, id:"prototype_price" %> 円</span>
   </div>
 
   <div class="field">
@@ -21,7 +21,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :body_color, "カラー" %><br />
+    <%= f.label :body_color, "色" %><br />
     <%= f.text_field :body_color, class: :form__text, id:"prototype_body_color" %>
   </div>
 
@@ -31,22 +31,22 @@
   </div>
 
   <div class="field">
-    <%= f.label :year, "年式" %><br />
+    <%= f.label :year, "年式 ( 西暦 )" %><br />
     <%= f.number_field :year, id:"prototype_year" %>
   </div>
 
     <div class="field">
     <%= f.label :mileage, "走行距離" %><br />
-    <%= f.number_field :mileage, id:"prototype_mileage" %>
+    <span><%= f.number_field :mileage, id:"prototype_mileage" %> km</span>
   </div>
 
   <div class="field">
-    <%= f.label :drive_system, "ミッション" %><br />
+    <%= f.label :drive_system, "ミッション ( AT , MT )" %><br />
     <%= f.text_field :drive_system, class: :form__text, id:"prototype_drive_system" %>
   </div>
 
   <div class="field">
-    <%= f.label :transmission, "駆動方式" %><br />
+    <%= f.label :transmission, "駆動方式 ( FF , FR , 4WD , 4WS )" %><br />
     <%= f.text_field :transmission, class: :form__text, id:"prototype_transmission" %>
   </div>
 
