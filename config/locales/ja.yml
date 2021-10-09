@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        shop_name: 店舗名
+        person_name: 担当者名
+        address: 住所
+        phone_number: 電話番号
+      prototype:
+        price: 価格
+        car_maker: メーカー
+        car_model: 車種
+        car_grade: グレード
+        body_color: 色
+        vi_number: 型式
+        year: 年式
+        mileage: 走行距離
+        drive_system: ミッション
+        transmission: 駆動方式
+        inspection: 車検期日
+        image: 車両の画像

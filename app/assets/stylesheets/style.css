@@ -266,8 +266,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-/* フッター */
 
+/* エラーメッセージ */
+.login-flash-message, .error-message {
+  color: red;
+}
+
+/* フッター */
 .footer {
   background-color: #999;
   padding: 10px 0;
