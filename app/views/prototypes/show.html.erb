@@ -19,7 +19,7 @@
         <div class="prototype__detail">
           <p class="detail__title">価格</p>
           <p class="detail__message">
-            <%= @prototype.price %>円
+            <%= number_to_currency(@prototype.price, unit: "円", format: "%n %u" ) %>
           </p>
         </div>
         <div class="prototype__detail">
@@ -49,7 +49,7 @@
         <div class="prototype__detail">
           <p class="detail__title">走行距離</p>
           <p class="detail__message">
-            <%= @prototype.mileage %>km
+            <%= number_to_currency(@prototype.mileage, unit: "km", format: "%n %u" ) %>
           </p>
         </div>
         <div class="prototype__detail">
